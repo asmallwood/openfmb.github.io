@@ -1,67 +1,916 @@
 <!DOCTYPE html>
-<html>
-<!--
-====================================================
-    __  ____  ______________  _______ ___    __ 
-   / / / /  |/  / ____/   \ \/ / ___//   |  / / 
-  / /_/ / /|_/ / /_  / /| |\  /\__ \/ /| | / /  
- / __  / /  / / __/ / ___ |/ /___/ / ___ |/ /___
-/_/ /_/_/  /_/_/   /_/  |_/_//____/_/  |_/_____/
-                                                     
-====================================================
-Owner Name: Hossain Mohammad Faysal
-Profile: https://www.facebook.com/hmfaysal
-Version: 1.1
-Description: Awesome dude, awesome life
-====================================================
--->
+<html lang="en">
 <head>
-{% include head.html %}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
+    <link rel="icon" href="images/sgip-favicon.png" sizes="32x32">
+    <link rel="icon" href="images/sgip-favicon.png" sizes="192x192">
+
+    <title>Open FMB</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ site.url }}/assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="{{ site.url }}/assets/lib/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!--<link href="./index-fixed_files/navbar-fixed-top.css" rel="stylesheet">-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="{{ site.url }}/assets/css/main.css" rel="stylesheet">
+
+
+    <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+    .en-markup-crop-options {
+        top: 18px !important;
+        left: 50% !important;
+        margin-left: -100px !important;
+        width: 200px !important;
+        border: 2px rgba(255, 255, 255, .38) solid !important;
+        border-radius: 4px !important;
+    }
+
+    .en-markup-crop-options div div:first-of-type {
+        margin-left: 0px !important;
+    }
+    </style>
 </head>
-<body class="home-template" itemscope itemtype="http://schema.org/WebPage">
-<header class="summer-site-head">
-    <div class="summer-site-head-menu">
-        <a class="summer-blog-logo" href="{{ site.url }}"><img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo" /></a>
-        
-        
-        <div class="summer-blog-menu">      
-    <div class="summer-mobile-menu show-for-small">
-        <a href="#"><i class="fa fa-bars"></i></a>
+
+<div data-pinterest-extension-installed="cr1.40" cz-shortcut-listen="true">
+    <div id="top"></div>
+
+    <!-- Fixed navbar -->
+    <nav id="navmenu" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#top"><img src="images/sgip-logo.png" alt="SGIP"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <!--<li class="active"><a href="/#">Home</a></li>-->
+                    <!--<li><a href="/#about">About</a></li>-->
+                    <!--<li><a href="/#contact">Contact</a></li>-->
+                    <!--<li class="dropdown">-->
+                    <!--<a href="/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                    <!--<li><a href="/#">Action</a></li>-->
+                    <!--<li><a href="/#">Another action</a></li>-->
+                    <!--<li><a href="/#">Something else here</a></li>-->
+                    <!--<li role="separator" class="divider"></li>-->
+                    <!--<li class="dropdown-header">Nav header</li>-->
+                    <!--<li><a href="/#">Separated link</a></li>-->
+                    <!--<li><a href="/#">One more separated link</a></li>-->
+                    <!--</ul>-->
+                    <!--</li>-->
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#top" style="padding-top: 6px;"><img src="images/openfmb-535x290.png" width="69.16px"
+                                                                      height="40px" alt="SGIP"></a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#standard">Standard</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#code">Code</a></li>
+                    <!--<li class="active"><a href="/">Fixed top <span class="sr-only">(current)</span></a></li>-->
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container" style="margin-bottom: 50px;">
+
+
+        <div id="ofmb-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#ofmb-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#ofmb-carousel" data-slide-to="1"></li>
+                <li data-target="#ofmb-carousel" data-slide-to="2"></li>
+                <li data-target="#ofmb-carousel" data-slide-to="3"></li>
+                <li data-target="#ofmb-carousel" data-slide-to="4"></li>
+                <li data-target="#ofmb-carousel" data-slide-to="5"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+                <div class="item active">
+                    <div>
+                        <div class="col-md-6 ofmb-carousel-left col-vertical-align">
+                            <img src="images/openfmb-535x290.png" alt="OpenFMB logo"
+                                 style-="margin: 40px auto; display: block; padding: 0 20px;">
+                        </div>
+                        <div class="col-md-6  ofmb-carousel-right col-vertical-align">
+                            <h2 class="ofmb-jumbo">OpenFMB is a framework and reference architecture for grid edge
+                                interoperability and distributed intelligence.</h2>
+                            <a class="btn btn-primary" href="#overview" target="_blank" role="button">Overview</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <div class="col-md-6 ofmb-carousel-left col-vertical-align">
+                            <img src="images/DistribuTECH2016boothcrowd540x290.jpg" alt="OpenFMB at DistribuTECH 2016">
+                        </div>
+                        <div class="col-md-6  ofmb-carousel-right col-vertical-align">
+                            <h2 class="ofmb-jumbo">First OpenFMB installation presented at DistribuTECH 2016 by Duke Energy's 25 vendor
+                                Coalition of the Willing II</h2>
+                            <a class="btn btn-primary"
+                               href="http://tdworld.com/grid-opt-smart-grid/duke-develops-true-interoperability"
+                               target="_blank" role="button">More</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <div class="col-md-6 ofmb-carousel-left col-vertical-align">
+                            <img src="images/NAESB-Cover540x290.png" alt="NEASB Standard">
+                        </div>
+                        <div class="col-md-6  ofmb-carousel-right col-vertical-align">
+                            <h2 class="ofmb-jumbo">OpenFMB is a standard of the North American Energy Standards Board ratified March
+                                2016 </h2>
+                            <a class="btn btn-primary" href="#standard" role="button">More</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <div class="col-md-6 ofmb-carousel-left col-vertical-align">
+                            <!--<img src="images/DER-Circuit-Segment-Management-Use-Case-20160802a540x290.png"-->
+                            <!--alt="DER circuit segment">-->
+                            <img src="images/DER-Circuit-Segment-Management-Use-Case-20160802b.png"
+                                 alt="DER circuit segment">
+                        </div>
+                        <div class="col-md-6  ofmb-carousel-right col-vertical-align">
+                            <h2 class="ofmb-jumbo">DER circuit segment management use case for feeder and microgrid circuit segments</h2>
+                            <a class="btn btn-primary" href="#overview" role="button">More</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <div class="col-md-6 ofmb-carousel-left col-vertical-align">
+                            <img src="images/Cartoon540x290.png" alt="OpenFMB cartoon">
+                        </div>
+                        <div class="col-md-6  ofmb-carousel-right col-vertical-align">
+                            <h2 class="ofmb-jumbo">OpenFMB cartoon shown in exhibit area of Smart Grid Interoperability Panel (SGIP) 2015
+                                annual conference</h2>
+                            <a class="btn btn-primary" href="https://www.youtube.com/watch?v=91HPyA8poI0"
+                               target="_blank" role="button">More</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <div class="col-md-6 ofmb-carousel-left col-vertical-align">
+                            <img src="images/OpenbFMB-ui-ipad540x290.jpg" alt="OpenFMB UI">
+                        </div>
+                        <div class="col-md-6  ofmb-carousel-right col-vertical-align">
+                            <h2>Simplified OpenFMB microgrid demonstration from 2016 DistribuTECH conference</h2>
+                            <a class="btn btn-primary" href="https://github.com/openfmb/dtech-demo-2016/wiki"
+                               target="_blank" role="button">More</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#ofmb-carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#ofmb-carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div> <!-- end container -->
+
+    <a id="overview" class="ofmb-anchor"></a>
+    <div class="ofmb-section ofmb-section-blue-">
+        <div class="container">
+            <!-- Need this when navigating to scroll 80px past fixed navbar -->
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 style="font-size: 800%; margin-top: 20px;">OpenFMB</h1>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 1.0em;">
+                <div class="col-md-12">
+                    <h2 class="text-center" style="margin-bottom: 20px;">
+                        OpenFMB is a framework and reference architecture comprised of existing standards for grid edge interoperability and distributed intelligence to augment operational systems and enhance enterprise integration
+                    </h2>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 1.6em;">
+                <div class="col-md-12">
+                    <p class="ofmb-full-width-text">
+                        The grid of the future will require we treat the use of data differently, leveraging metadata
+                        and analyzing data locally to compensate for what we expect to be the mountain of potential data
+                        available from new grid systems. Traditional headend systems, as illustrated on the left of the
+                        figure below, have relied on relatively few sources of field information. With the incorporation
+                        of new asset classes on the grid (AMI, smart inverters, PMUs, etc.) we have potential access to
+                        large amounts of data that can more quickly and broadly describe the nature of the power system.
+                        But there are complexities and inefficiencies associated with dealing with this large volume of
+                        diverse information that traditional headend systems were not designed for. No longer does all
+                        information need to go to central systems. Federated local data can be securely made available
+                        to new assets at the edge of the grid in order to complement and enhance the operation of these
+                        existing systems. OpenFMB nodes, shown as blue hexagons on the right of the figure below, host
+                        applications that analyze available information to develop a higher resolution of situational
+                        awareness and provides to ability to affect local control in coordination with other operational
+                        decision making.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="images/MoreDataInTheGridWeWant-20161019a.png" width="90%" alt="OpenFMB Before/After"
+                         style="max-width: 1081px; margin: 40px auto; display: block;">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 1em;">
+                <div class="col-md-12">
+                    <p class="ofmb-full-width-text">
+                        OpenFMB enables solution providers with the ability to leverage new and existing grid assets to
+                        ensure that the future power system is more resilient, reliable, safe, secure and cost effective
+                        as compared to traditional approaches. The OpenFMB reference architecture offers best practices
+                        and a variety of solution options that a utility service provider can draw upon in defining its
+                        specific implementation. Together the business oriented framework approaches and reference
+                        architecture support a utility service provider’s procurement process.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-    <ul class="summer-menu">
-        <li class="summer-mobile-close-btn show-for-small text-right">
-            <a href="#"><i class="fa fa-times"></i></a>
-        </li>
-{% for link in site.links %}
-            <li>{% if link.external %}
-            <a href="{{ link.url }}">{{ link.title }}</a>
-            {% else %}
-            <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
-            {% endif %} </li>
-{% endfor %}            
-           <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
-    </ul>
+
+
+    <div class="ofmb-section ofmb-section-blue">
+        <div class="container">
+
+            <div class="row" style="margin-top-: 2.6em;">
+                <div class="col-md-12">
+                    <h2>Guiding Principles</h2>
+                    <hr/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Based on operational and functional requirements</h3>
+                </div>
+                <div class="col-md-8">
+                    <ul class="ofmb-detail">
+                        <li>Business-driven top-down business case and use case approaches drive requirements</li>
+                        <li>Requirements determine and refine scope and success parameters</li>
+                        <li>Features added only when requirements demand them</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Agile and evolving architecture</h3>
+                </div>
+                <div class="col-md-8">
+                    <ul class="ofmb-detail">
+                        <li>Allows for a flexible set of solutions to accommodate a utility service provider’s asset mix</li>
+                        <li>Compatible with multiple data models, communications, protocols, and technologies as they evolve</li>
+                        <li>Support multiple methods of communication and integration</li>
+                        <li>Leverage existing standards to federate data between field devices and harmonize them with centralized systems</li>
+                        <li>Open, observable, and auditable interfaces at multiple scales for interoperability</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>No reinventing the wheel</h3>
+                </div>
+                <div class="col-md-8">
+                    <ul class="ofmb-detail">
+                        <li>Use existing standards, architecture patterns, and requirements where possible</li>
+                        <li>Be consistent with other industry IoT solutions, such as Industrial Internet Consortium (IIC) activities</li>
+                        <li>Time to market is key driver</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Focus on business value and objectives</h3>
+                </div>
+                <div class="col-md-8">
+                    <ul class="ofmb-detail">
+                        <li>Add features with most impactful business value first</li>
+                        <li>Scale operations independently, without a system-wide rollout</li>
+                        <li>Accelerate ability to stack operational benefits</li>
+                        <li>Foster innovative products and services</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Collaborate with standards bodies</h3>
+                </div>
+                <div class="col-md-8">
+                    <ul class="ofmb-detail">
+                        <li>Coordinate with the NAESB, IEC, and other relevant SDOs as required</li>
+                        <li>Minimize or eliminate duplication of effort and scope</li>
+                        <li>Coordination takes time and effort, but it’s worth it</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>No stranded resources</h3>
+                </div>
+                <div class="col-md-8">
+                    <ul class="ofmb-detail">
+                        <li>Consider topology and needs of existing environment</li>
+                        <li>Use of existing resources and ability to add new functionality without “rip and replace” is a key success criteria</li>
+                        <li>Support integration of renewables and storage with the existing grid</li>
+                        <li>Flexibility, scalability, and backward-compatibility are critical</li>
+                        <li>Modify solutions as necessary to address existing environment</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Security built-in from the beginning</h3>
+                </div>
+                <div class="col-md-8">
+                    <ul class="ofmb-detail">
+                        <li>Security is a functional and operational requirement</li>
+                        <li>Resiliency when portions of the grid are segmented</li>
+                        <li>Apps run in the field autonomously and require secure, reliable operation</li>
+                        <li>Solution must be reliable and trustworthy</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="ofmb-section">
+        <div class="container">
+
+            <div class="row" style="margin-top-: 2.6em;">
+                <div class="col-md-12">
+                    <h2>Framework and Architecture</h2>
+                </div>
+            </div>
+            <div class="row" style="margin-top: .5em;">
+                <div class="col-md-12">
+                    <p class="ofmb-full-width-text">
+                        The OpenFMB framework consists of business-driven top-down business case, use case, data
+                        modeling, and implementation approaches. The reference architecture includes operational as well
+                        as management services reference architecture and best practices, including ones for
+                        security.
+                    </p>
+                    <p class="ofmb-full-width-text">
+                        OpenFMB nodes are the deployment unit and range in form from virtual software environments to a
+                        variety of physical hardware based options. The following diagram illustrates representative
+                        operational interactions between OpenFMB nodes. The nodes are shown in yellow. Shown in blue,
+                        are applications providing services, native controllers for their related field equipment ,
+                        adapters to existing field controllers and their related equipment, and adapters to other
+                        systems such as central systems. In green are field equipment related to their native
+                        controllers as well as existing systems such as existing field controllers and their related
+                        equipment and other existing systems such as central systems. Shown in red are Industrial
+                        Internet of Things (IIoT) publish-subscribe middleware that provides authorized communications
+                        within a node without messages leaving the node as well as authorized communications between
+                        nodes. These communications utilize data profiles based on existing standards, such as IEC’s
+                        Common Information Model (CIM), for the semantic data model as developed through the framework
+                        approach. In this way, OpenFMB deployments can be scaled independently to meet specific needs
+                        without a system-wide rollout. For resiliency, peer-to-peer publish-subscribe protocols are
+                        commonly used.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="images/OpenFMB-Nodes-20161027a.png" width="90%" alt="OpenFMB Nodes" style="max-width: 806px; margin: 40px auto; display: block; border: 20px solid white; border-radius: 10px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Accomplishments</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="ofmb-full-width-text">
+                        In March 2015, the Smart Grid Interoperability Panel (SGIP) formerly kicked-off its OpenFMB
+                        effort to foster field interoperability drawing upon Duke Energy’s previous Coalition of the
+                        Willing I and Distributed Intelligence Platform work. By the 2015 SGIP Annual Conference in
+                        November, three microgrid use cases had developed and demonstrated: optimization, unscheduled
+                        islanding, and grid reconnection.
+                    </p>
+                    <p class="ofmb-full-width-text">
+                        The first OpenFMB reference implementation utilized these SGIP use cases at Duke Energy’s Mount
+                        Holly microgrid test center, and was demonstrated at the 2016 DistribuTECH Conference in
+                        February by
+                        <a href="https://www.duke-energy.com/about-us/coalition.asp" target="_blank">Duke Energy’s
+                            Coalition of
+                            the Willing II (COW-II) vendor partners</a>. To advance interoperability among established
+                        and new technologies, the demonstration highlighted multiple technology options from 25 vendors
+                        with at least two independently developed implementations of each function.
+                    </p>
+                    <p class="ofmb-full-width-text">
+                        For the 2016 Annual SGIP Grid Modernization Summit in November, the SGIP OpenFMB effort created
+                        and demonstrated a DER Circuit Segment Management use case that focuses on actively coordinating
+                        circuit segment power system equipment to accommodate DER including a microgrid.
+                    </p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="images/DER-Circuit-Segment-Management-Use-Case-20160802a.png" width="90%" alt="OpenFMB Nodes"
+                         style="max-width: 1223px; margin: 40px auto; display: block;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="ofmb-full-width-text">
+                        Duke Energy plans to implement the DER Circuit Segment Management use case along with the others listed below:
+                    </p>
+                    <ul>
+                        <li>DER Circuit Segment Management
+                            <ul>
+                                <li>Primary Scenario: Voltage, Frequency, Power Factor Support
+                                    <ul>
+                                        <li>DER Point of Interconnection (POI) Coordination</li>
+                                        <li>Point of Common Coupling (PCC) Coordination with Microgrid Use Cases</li>
+                                    </ul>
+                                </li>
+                                <li>Secondary Extensions
+                                    <ul>
+                                        <li>Solar Smoothing: Reduce Circuit Segment Volatility</li>
+                                        <li>Volt-VAr Management: Power Factor Optimization</li>
+                                        <li>Peak Demand: Shaving/Shifting</li>
+                                    </ul>
+                                </li>
+                                <li>Tertiary Extensions
+                                    <ul>
+                                        <li>Distribution Transfer-Trip</li>
+                                        <li>Anti-Islanding: Inadvertent Island Detection</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Circuit Segment Optimization (Connected Segment or Islanded Microgrid)
+                            <ul>
+                                <li>Markets, Weather, Dispatch/Load Forecasts</li>
+                            </ul>
+                        </li>
+                        <li>Microgrid Unscheduled Islanding (Grid-to-Island)</li>
+                        <li>Microgrid Reconnection (Island-to-Grid)</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div> <!-- end container -->
+    </div> <!-- end ofmb-section -->
+
+
+    <div class="ofmb-section ofmb-section-blue">
+        <div class="container">
+            <a id="standard" class="ofmb-anchor"></a>
+            <!-- Need this when navigating to scroll 80px past fixed navbar -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>NAESB STANDARD</h1>
+                    <h3 style="margin-bottom: 1em;">OpenFMB was ratified by the North American Energy Standards Board on
+                        March 7, 2016.</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="ofmb-full-width-text">
+                        The North American Energy Standards Board (NAESB) established a Retail Markets Quadrant Task Force,
+                        RMQ.26, to develop the OpenFMB framework and reference architecture document in parallel with SGIP’s
+                        OpenFMB effort. SGIP appointed a liaison to the task force so that the framework and reference
+                        architecture reflects the experiences and lessons from the initial business case, use case, data
+                        modeling, implementation, and SGIP Annual Conference interoperability demonstration activities.
+                    </p>
+                    <p class="ofmb-full-width-text">
+                        OpenFMB was ratified by the North American Energy Standards Board on <a
+                            href="https://www.naesb.org/pdf4/031516press_release.pdf" target="_blank">March 7, 2016</a>. The
+                        official
+                        release is NAESB RMQ.26 Open Field Message Bus (OpenFMB) Model Business Practices. It is part of the
+                        version 3.1 bundle of all their standards released at the end of March.
+                    </p>
+
+                    <h3 style="font-weight: 200;">Obtaining a Copy</h3>
+                    <p class="ofmb-full-width-text">
+                        Utilities and other members of NAESB have free access to NAESB RMQ.26 OpenFMB. The lower center of
+                        <a
+                                href="https://www.naesb.org/" target="_blank">www.naesb.org</a> has a link <a
+                            href="https://naesb.org/copyright.asp" target="_blank">"NAESB Copyright Policy &amp; Access
+                        &amp;
+                        Use of NAESB Standards”</a> which goes to a page with a link in the middle center <a
+                            href="https://www.naesb.org/pdf2/copyright.pdf" target="_blank">“NAESB Copyright Policy and
+                        Companies with Access to NAESB Standards Under the Copyright Policy”</a> that lists entities with
+                        access
+                        to RMQ.26 OpenFMB. Ask your entity’s NAESB representative for access to RMQ.26 OpenFMB.
+                    </p>
+                    <p class="ofmb-full-width-text">
+                        For non-members of NAESB the upper left of <a href="https://www.naesb.org/" target="_blank">www.naesb.org</a>
+                        has a link <a href="http://www.naesb.org/pdf/ordrform.pdf" target="_blank">"Order Materials"</a> In
+                        particular, fill-in the bottom line of the Retail section of the document by specifying RMQ.26
+                        OpenFMB
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a id="resources" class="ofmb-anchor"></a> <!-- Need this when navigating to scroll 80px past fixed navbar -->
+    <div class="ofmb-section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 style="margin-bottom: .4em;">RESOURCES</h1>
+                </div>
+                <div class="col-md-6">
+                    <h2>Publications</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                            <h4 class="ofmb-h-small"><a
+                                    href="https://tdworld.com/substations/duke-develops-true-interoperability"
+                                    target="_blank">Duke Develops True Interoperability</a></h4>
+                            <p>Overview of 25 vendor Duke Energy Coalition of the Willing Phase II microgrid</p>
+                        </li>
+                        <li>
+                            <h4 class="ofmb-h-small"><a
+                                    href="http://www.electricenergyonline.com/show_article.php?mag=106&article=865"
+                                    target="_blank">Unlocking the grid edge: Open Standards are closer than you
+                                think</a></h4>
+                            <p>OpenFMB participants and activities by SGIP VP of Operations</p>
+                        </li>
+                        <li>
+                            <h4 class="ofmb-h-small"><a
+                                    href="http://www.electricenergyonline.com/show_article.php?mag=114&article=973"
+                                    target="_blank">OpenFMB™ Brings a Standard and a New Tool Set to the Grid's Edge</a>
+                            </h4>
+                            <p>OpenFMB lead-up to SGIP 2016 Grid Modernization Summit</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-6">
+                    <h2>Use Cases</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                            <h4 class="ofmb-h-small"><a href="" target="_blank">DER Circuit Segment Management</a></h4>
+                            <p>Primary scenario and five extension scenarios for managing DER including islanding
+                                microgrids on a circuit segment</p>
+                        </li>
+                        <li>
+                            <h4 class="ofmb-h-small"><a href="" target="_blank">Circuit Segment Optimization</a></h4>
+                            <p>Optimization and circuit segment coordination</p>
+                        </li>
+                        <li>
+                            <h4 class="ofmb-h-small"><a href="" target="_blank">Microgrid Unscheduled Islanding</a></h4>
+                            <p>Seamless microgrid islanding</p>
+                        </li>
+                        <li>
+                            <h4 class="ofmb-h-small"><a href="" target="_blank">Microgrid Grid Reconnection</a></h4>
+                            <p>Seamless microgrid reconnection</p>
+                        </li>
+                        <li>
+                            <h4 class="ofmb-h-small"><a href="" target="_blank">Microgrid Optimization</a></h4>
+                            <p>?</p>
+                        </li>
+                        <li>
+                            <h4 class="ofmb-h-small"><a href="" target="_blank">Microgrid Unscheduled Islanding Transition</a></h4>
+                            <p>?</p>
+                        </li>
+                        <li>
+                            <h4 class="ofmb-h-small"><a href="" target="_blank">Microgrid Island to Grid Connected Transition</a></h4>
+                            <p>?</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Conferences</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                            <h4 class="ofmb-h-small"><a href="https://www.youtube.com/watch?v=91HPyA8poI0"
+                                                        target="_blank">OpenFMB Cartoon</a></h4>
+                            <p>From 2015 SGIP Annual Conference</p>
+                        </li>
+                        <li>
+                            <h4 class="ofmb-h-small"><a href="https://www.duke-energy.com/pdfs/interoperability-brochure.pdf" target="_blank">Duke Energy Interoperability Brochure</a></h4>
+                            <p>From DistribuTECH 2016</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-6">
+                    <h2>Reference Implementations</h2>
+                    <h4 class="ofmb-h-small">Duke Energy’s Mt. Holly Site</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.duke-energy.com/about-us/coalition.asp" target="_blank">Coalition Web
+                                Site</a>
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/o0sd6CsxEjw" target="_blank">Video</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </div>
-        <div class="clearfix"></div>
+
+<a id="community" class="ofmb-anchor"></a> <!-- Need this when navigating to scroll 80px past fixed navbar -->
+<div class="ofmb-section ofmb-section-lightgray">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 style="margin-bottom: .4em;">COMMUNITY</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2><a href="blog.html">Blog</a></h2>
+
+                {{ content }}
+
+                <p>[1st post: reference to materials from 10/18/16 webinar}</p>
+                <p>[2nd post: pictures and materials from summit]</p>
+
+                <h2>Getting Involved</h2>
+                <p>
+                    The Smart Grid Interoperability Panel (SGIP) hosts general OpenFMB meetings and specialized task
+                    force meetings for topics such as use cases and cybersecurity. These meetings are where individuals
+                    from utilities, vendors, academic institutions, government agencies, and others come together to
+                    further OpenFMB. These efforts have produced OpenFMB use cases, demonstrations, and other materials.
+                    Join to <a href="http://www.sgip.org/openfmb/" target="_blank">participate</a>.
+                </p>
+                <p>
+                    In addition, the OpenFMB software <a href="" target="_blank">web page</a> and
+                    <a href="https://github.com/openfmb?tab=repositories" target="_blank">GitHub site</a> provide a simulation and sample code
+                    especially for utilities and others to quickly start with OpenFMB. Read the wikis, clone or fork a
+                    repository, and get started.
+                </p>
+
+
+                <!--<ul class="featured-list featured-list-bordered">-->
+                <!--<li class="m-b-md">-->
+                <!--<div class="featured-list-icon">-->
+                <!--<i class="fa fa-bolt" aria-hidden="true"></i>-->
+                <!--</div>-->
+
+                <!--<h3>Utility Name</h3>-->
+                <!--<p>-->
+                <!--Utility logo to left and link to articles or utility web page about OpenFMB here.-->
+                <!--</p>-->
+                <!--</li>-->
+
+                <!--<li>-->
+                <!--<div class="featured-list-icon">-->
+                <!--<i class="fa fa-github-alt" aria-hidden="true"></i>-->
+                <!--&lt;!&ndash;<span class="icon icon-github"></span>&ndash;&gt;-->
+                <!--</div>-->
+                <!--<h3>Fork things</h3>-->
+                <!--<p>-->
+                <!--Use github to share things on the internet then change them. Make things better. Free-->
+                <!--software? But not as in beer.-->
+                <!--</p>-->
+                <!--</li>-->
+                <!--</ul>-->
+            </div>
+            <div class="col-sm-6">
+                <h2>Events</h2>
+                <ul class="list-unstyled">
+                    <li class="m-b-md">
+                        <h4 class="ofmb-h-small"><a href="https://sgipconference.com/" target="_blank">SGIP Grid Modernization Summit</a></h4>
+                        <p>November 7 – 10, 2016<br/>OpenFMB Expo, presentation, and working session</p>
+                    </li>
+                    <li class="m-b-md">
+                        <h4 class="ofmb-h-small"><a href="http://www.distributech.com/index.html" target="_blank">DistribuTECH 2017</a></h4>
+                        <p>January 31 – February 2, 2017<br/>OpenFMB technical presentations</p>
+                    </li>
+                    <!--<li class="m-b-md">-->
+                    <!--<h4 class="ofmb-h-small">November 7 – 10 <a href="https://sgipconference.com/" target="_blank">SGIP Grid Modernization Summit</a></h4>-->
+                    <!--<p>OpenFMB Expo, presentation, and working session</p>-->
+                    <!--</li>-->
+                    <!--<li class="m-b-md">-->
+                    <!--<h4 class="ofmb-h-small">January 31 – February 2, 2017 <a href="http://www.distributech.com/index.html" target="_blank">DistribuTECH 2017</a></h4>-->
+                    <!--<p>OpenFMB technical presentations</p>-->
+                    <!--</li>-->
+                </ul>
+
+                <h3>Past Events</h3>
+                <ul class="list-unstyled">
+                    <li class="m-b-md">
+                        <h4 class="ofmb-h-small">DistribuTECH 2016</h4>
+                        <p>February 9 – 11, 2016<br/>OpenFMB booths, live demonstration, and technical presentations</p>
+                    </li>
+                    <li class="m-b-md">
+                        <h4 class="ofmb-h-small">SGIP Annual Meeting</h4>
+                        <p>November 3 – 5, 2015<br/>OpenFMB Expo, presentations, and working session</p>
+                    </li>
+                    <!--<li class="m-b-md">-->
+                    <!--<h4 class="ofmb-h-small">February 9 – 11, 2016 DistribuTECH 2016</h4>-->
+                    <!--<p>OpenFMB booths, live demonstration, and technical presentations</p>-->
+                    <!--</li>-->
+                    <!--<li class="m-b-md">-->
+                    <!--<h4 class="ofmb-h-small">November 3 – 5, 2015 SGIP Annual Meeting</h4>-->
+                    <!--<p>OpenFMB Expo, presentations, and working session</p>-->
+                    <!--</li>-->
+                </ul>
+
+                <!--<ul class="featured-list featured-list-bordered">-->
+                <!--<li class="m-b-md">-->
+                <!--<div class="featured-list-icon">-->
+                <!--<i class="fa fa-medium" aria-hidden="true"></i>-->
+                <!--</div>-->
+
+                <!--<h3>Write things</h3>-->
+                <!--<p>-->
+                <!--Use Medium to write things down and sound smart. Also when you write, your writings looks-->
+                <!--pretty and that is cool.-->
+                <!--</p>-->
+                <!--</li>-->
+
+                <!--<li>-->
+                <!--<div class="featured-list-icon">-->
+                <!--<i class="fa fa-twitter" aria-hidden="true"></i>-->
+                <!--</div>-->
+                <!--<h3>Tweet things</h3>-->
+                <!--<p>-->
+                <!--Use twitter to share 140 characters worth of anything you want. Pictures, videos, etc. It-->
+                <!--doesn't really matter.-->
+                <!--</p>-->
+                <!--</li>-->
+                <!--</ul>-->
+            </div>
+
+        </div>
+
+    </div> <!-- end container -->
+</div> <!-- end ofmb-section -->
+
+
+<a id="code" class="ofmb-anchor"></a> <!-- Need this when navigating to scroll 80px past fixed navbar -->
+<div class="ofmb-section">
+    <div class="container">
+
+        <!--<div class="row">-->
+        <!--<div class="col-md-12 text-center">-->
+        <!--<h1 style="margin-bottom: .4em;">CODE</h1>-->
+        <!--</div>-->
+        <!--</div>-->
+        <div class="row">
+            <div class="col-sm-6 col-vertical-align- text-center">
+                <h1 style="color: #e07923; "><img src="images/openfmb-535x290.png" width="91.64px" height="62px" alt="SGIP" style="vertical-align: bottom; padding-bottom: 9px;"> Code</h1>
+                <p>
+                    OpenFMB code repositories hosted on <a href="http://github.com" target="_blank">GitHub</a> — a code
+                    repository, workflow and hosting site allowing developers to pull code and provide updates with
+                    approval. These repositories are managed by the OpenFMB Technical Committee and initially aim to
+                    provide Utilities and Vendors with reproducible demonstrations using AMQP, DDS and MQTT. The forward
+                    path will include core projects that can be used as a developers kit for OpenFMB.
+                </p>
+                <ul class="list-unstyled ofmb-li-spaced" style="margin-top-: 2em;">
+                    <li class="m-b-md">
+                        <h3 class="ofmb-h-small"><a href="https://github.com/openfmb?tab=repositories" target="_blank">All Repositories <i class="fa fa-angle-right" aria-hidden="true"></i></a></h3>
+                        <p>
+                            Review the current use cases and data models.
+                            Learn about device simulators for customer loads, solar, ESS and others.
+                            Learn about the device adapters such as DNP3, Modbus, and others.
+                        </p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-sm-6 col-vertical-align- text-center">
+                <img width="80%" src="images/OpenbFMB-ui-ipad540x290.jpg" style="margin-top: 20px; padding-right-: 20px;" alt="OpenFMB UI">
+                <ul class="list-unstyled ofmb-li-spaced" style="margin-top-: 2em;">
+                    <li class="m-b-md">
+                        <h3 class="ofmb-h-small"><a href="https://github.com/openfmb/dtech-demo-2016/wiki" target="_blank">DistribuTECH 2016 Demo  <i class="fa fa-angle-right" aria-hidden="true"></i></a></h3>
+                        <p>
+                            Microgrid Demo of OpenFMB presented at DistribuTECH 2016. It has instructions for setting up the demo, leveraging several of the
+                            repositories that show the basic concepts of OpenFMB.
+                        </p>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div> <!-- end container -->
+</div> <!-- end ofmb-section -->
+
+
+<div class="block app-block-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="images/openfmb-535x290.png" width="200px" height="115.66px" alt="OpenFMB">
+            </div>
+            <div class="col-md-3">
+                <h4>LINKS</h4>
+                <ul class="list-unstyled ofmb-list-spaced">
+                    <li><a href="#overview">
+                        <small style="padding-right:.5em;"><i class="fa fa-angle-double-right" aria-hidden="true"></i> </small>
+                        Overview</a></li>
+                    <li><a href="#standard">
+                        <small style="padding-right:.5em;"><i class="fa fa-angle-double-right" aria-hidden="true"></i> </small>
+                        Standard</a></li>
+                    <li><a href="#resources">
+                        <small style="padding-right:.5em;"><i class="fa fa-angle-double-right" aria-hidden="true"></i> </small>
+                        Resources</a></li>
+                    <li><a href="#community">
+                        <small style="padding-right:.5em;"><i class="fa fa-angle-double-right" aria-hidden="true"></i> </small>
+                        Community</a></li>
+                    <li><a href="#code">
+                        <small style="padding-right:.5em;"><i class="fa fa-angle-double-right" aria-hidden="true"></i> </small>
+                        Code</a></li>
+                </ul>
+
+            </div>
+            <div class="col-md-3">
+                <h4>EVENTS</h4>
+                <ul class="list-unstyled">
+                    <li class="m-b-md">
+                        <h5 class="ofmb-h-small"><a href="https://sgipconference.com/" target="_blank">SGIP Grid Modernization Summit</a></h5>
+                        <p>November 7 – 10, 2016</p>
+                    </li>
+                    <li class="m-b-md">
+                        <h5 class="ofmb-h-small"><a href="http://www.distributech.com/index.html" target="_blank">DistribuTECH 2017</a></h5>
+                        <p>January 31 – February 2, 2017</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4>CONNECT</h4>
+                <h1>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </h1>
+            </div>
+
+        </div>
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-sm-12">
+                <h6>Copyright @ 2016. SGIP 2.0, Inc. (“SGIP”).  All Rights Reserved.  OpenFMB (TM) is Trademarked by the SGIP.</h6>
+            </div>
+        </div>
     </div>
-    <div class="summer-site-head-content" >
-        <div class="summer-site-head-bg"></div>
-        <h1 class="summer-blog-title">
-            <span class="summer-site-head-title-bg">
-                {{ site.title }}
-            </span>
-        </h1>
-        <h2 class="summer-blog-description">{{ site.description }}</h2>
-    </div>
-</header>
+</div>
 
 
-<main class="summer-content" role="main">
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{{ site.url }}/assets/js/public/jqueryb146.js?v=77a7756db2"></script>
+<script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/public/jqueryb146.js?v=77a7756db2"><\/script>')</script>
+<script src="{{ site.url }}/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="{{ site.url }}/assets/lib/ie10-viewport-bug-workaround.js"></script>
 
-            {{ content }}
-</main>
-    {% include footer.html %}
 
-{% include scripts.html %}  
-</body>
-</html>
+</body></html>
