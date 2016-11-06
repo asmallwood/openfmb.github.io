@@ -16,10 +16,10 @@ owner:
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    OpenFMB is a framework and reference architecture for grid edge interoperability and distributed intelligence
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        openfmb
-  facebook:       openfmb
+  twitter:        SGIPnews
+#  facebook:       openfmb
   github:         openfmb
-  instagram:      openfmb
+#  instagram:      openfmb
   # For Google Authorship https://plus.google.com/authorship
   google_plus:    https://plus.google.com/u/0/102602916593522619858
 
