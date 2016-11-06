@@ -2,7 +2,7 @@
 layout: post
 title: OpenFMB Exhibitors at the Grid Modernization Summit Expo
 description: "..."
-headline: "..."
+headline: "Welcome to the OpenFMB Collaborative Site Blog"
 categories: announcement
 tags:
   - conference
@@ -18,4 +18,6 @@ published: true
 >&quot;The beginning is the most important part of the work.&quot;
 ><small><cite title="Plato">Plato</cite></small>
 
-### TBD...
+### Come learn about the Open Field Message Bus (OpenFMB)
+
+The 2016 Grid Modernization Summit being held in Washingtion, DC on Nov 7th through Nov 10th is lauching the [OpenFMB Collaborative Site](https://openfmb.github.io).  Join the summit and learn about OpenFMB from vendor exhibits and meetings.   
