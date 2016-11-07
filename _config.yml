@@ -12,7 +12,7 @@ url:        	  https://openfmb.github.io
 owner:
   name:           OpenFMB
   avatar:         openfmb-300x300.png
-  email:          you@email.com
+  email:          openfmb@sgip.org
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    OpenFMB is a framework and reference architecture for grid edge interoperability and distributed intelligence
   # Social networking links used in footer. Update and remove as you like.
