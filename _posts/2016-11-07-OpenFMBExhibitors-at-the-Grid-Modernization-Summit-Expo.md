@@ -33,10 +33,10 @@ ENABLING NEXT GENERATION EDGE TECHNOLOGIES
 
 
                Focus Area  |  Vendor or Organization | Booth
-               ----------------------- | --------------------------|-----------
-               BUSINESS REQUIREMENTS  | |
-                | Duke Energy | 104
-                | SGIP | 103
+               -----------------------|--------------------------|-------:|
+               BUSINESS REQUIREMENTS  | | 
+                | Duke Energy | 104 
+                | SGIP | 103 |
                USE CASE | |
                  | Duke Energy | 104
                  | SGIP | 103
