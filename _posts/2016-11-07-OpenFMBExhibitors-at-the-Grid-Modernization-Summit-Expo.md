@@ -59,7 +59,7 @@ ENABLING NEXT GENERATION EDGE TECHNOLOGIES
 
 ### HARDWARE
 
-+ Hitach - Spriae #121
++ Hitachi - Spriae #121
 + Itron  #119
 + Machfu  #118
 + OMNETRIC Group  #122
@@ -67,7 +67,7 @@ ENABLING NEXT GENERATION EDGE TECHNOLOGIES
 
 ### SOFTWARE  
 
-+ Hitach - Spriae #121
++ Hitachi - Spriae #121
 + Itron  #119
 + Machfu  #118
 + OMNETRIC Group  #122
