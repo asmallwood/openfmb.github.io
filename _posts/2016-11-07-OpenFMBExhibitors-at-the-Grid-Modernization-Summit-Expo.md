@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OpenFMB Exhibitors at the Grid Modernization Summit Expo
+title: 10 OpenFMB Exhibitors at the Grid Modernization Summit Expo
 description: "..."
 headline: "Welcome to the OpenFMB Collaborative Site Blog"
 categories: announcement
