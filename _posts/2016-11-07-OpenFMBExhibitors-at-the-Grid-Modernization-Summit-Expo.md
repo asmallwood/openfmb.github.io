@@ -1,11 +1,11 @@
-
 ---
 layout: post
 title: 10 OpenFMB Exhibitors at the Grid Modernization Summit Expo
 description: "..."
 headline: "Welcome to the OpenFMB Collaborative Site Blog"
 categories: announcement
-tags: conference
+tags: 
+     - conference
 imagefeature: "website-speed.jpg"
 imagecredit: spreadeffect.com
 imagecreditlink: "http://www.spreadeffect.com/blog/improve-website-speed/"
@@ -29,7 +29,7 @@ ENABLING NEXT GENERATION EDGE TECHNOLOGIES
 
 
 Focus Area  |  Vendor or Organization | Booth
------------------------ | --------------------------|-----------------------------
+----------------------- | --------------------------|-----------
 BUSINESS REQUIREMENTS  | |
  | Duke Energy | 104
  | SGIP | 103
